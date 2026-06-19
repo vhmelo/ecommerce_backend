@@ -22,14 +22,15 @@ docker-compose up -d
 Verificação de status:
 Para garantir que os bancos estão prontos para receber conexões, execute docker ps e verifique se o status dos containers db_dev (porta 5435) e db_test (porta 5433) consta como (healthy).
 
-2. Comando exato para executar os testes
+## 2. Comando exato para executar os testes
 Antes de executar os testes, certifique-se de que o seu ambiente virtual Python está ativado e as dependências do requirements.txt estão instaladas.
 
 Para executar a suíte completa de testes com detalhamento de cada função e gerar o relatório de cobertura de código (coverage), utilize o comando exato abaixo:
 
 Bash
 pytest --cov=main --cov=routers -v
-3. Saída esperada do Pytest
+
+## 3. Saída esperada do Pytest
 Ao executar o comando acima com o container db_test rodando de forma saudável, a saída no terminal deverá ser idêntica à apresentada abaixo, registrando sucesso (PASSED) em todos os 15 testes de integração e validação, além de 100% de cobertura.
 
 Plaintext
@@ -56,6 +57,7 @@ tests/test_produtos.py::test_isolamento_1_adiciona_produto PASSED         [ 93%]
 tests/test_produtos.py::test_isolamento_2_banco_deve_estar_limpo PASSED   [100%]
 
 ---------- coverage: platform win32, python 3.13.14-final-0 ----------
+
 Name                 Stmts   Miss  Cover
 ----------------------------------------
 main.py                 20      0   100%

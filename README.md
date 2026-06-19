@@ -65,7 +65,8 @@ routers/produtos.py     34      0   100%
 TOTAL                   54      0   100%
 
 ============================== 15 passed in 0.85s ==============================
-4. Isolamento entre Testes
+
+## 4. Isolamento entre Testes
 A integridade da nossa suíte de testes é garantida por um estrito isolamento de estado, assegurando que o lixo residual de um teste não afete o resultado do próximo. Este mecanismo foi implementado no arquivo conftest.py através das seguintes estratégias:
 
 Separação de Banco: Os testes nunca tocam no banco de dados de desenvolvimento. Utilizamos uma porta e um container exclusivos (db_test na porta 5433).

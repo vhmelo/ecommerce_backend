@@ -57,7 +57,6 @@ tests/test_produtos.py::test_isolamento_1_adiciona_produto PASSED         [ 93%]
 tests/test_produtos.py::test_isolamento_2_banco_deve_estar_limpo PASSED   [100%]
 
 ---------- coverage: platform win32, python 3.13.14-final-0 ----------
-
 Name                 Stmts   Miss  Cover
 ----------------------------------------
 main.py                 20      0   100%
